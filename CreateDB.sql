@@ -1,3 +1,7 @@
+CREATE USER cycloneuser WITH ENCRYPTED PASSWORD 'abc';
+GRANT ALL PRIVILEGES ON DATABASE cyclonedata TO cycloneuser;
+
+
 CREATE TABLE "cyclone_info" (
 	"storm_identifier" TEXT NOT NULL,
 	"storm_name" TEXT NOT NULL,
